@@ -1,4 +1,4 @@
-const assortment = require("./data/assortment.json");
+const assortment = require("./data/assortment1.json");
 
 console.log(assortment);
 
@@ -50,7 +50,7 @@ function getItemsByCategory(num) {
                         <img src=${assortment[i].image} style="width: 75px; height: 75px;"</img>
                     </td>
                     <td>${assortment[i].item_no}</td>
-                    <td>${assortment[i].short_desc}</td>
+                    <td>${assortment[i].item}</td>
                 </tr>
             `
             $("#category-result").append(table);
